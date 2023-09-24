@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            font-weight: 500;
+            font-size: 40px;
+            color: white;
+        }
+        .item{
+            width: 400px;height: 400px;
+            background-color: gray;
+            margin: 20px;
+            text-align: center;
+            padding: 160px;
+        }
+        .fadein:active{
+            opacity: 0.5;
+        }
+        .changecolor:hover{
+            background-color: aquamarine;
+        }
+        .grow:active{
+            transform: scale(0.9);
+        }
+        .shrink:hover{
+            transform: scale(0.8);
+        }
+        .rotate:active{
+            transform: rotate(45deg);
+        }
+        .squarecricle:hover{
+            height: 200px;
+            border-radius: 50%;
+        }
+        .border:hover{
+            border: 50px solid rgb(61, 128, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="fadein item">
+        <p>Fade in</p>
+    </div>
+    <div class="changecolor item">
+        <p>Change Color</p>
+    </div>
+    <div class="grow item">
+        <p>Grow</p>
+    </div>
+    <div class="shrink item">
+        <p>Shirink</p>
+    </div>
+    <div class="rotate item">
+        <p>Rotate</p>
+    </div>
+    <div class="squarecricle item">
+        <p>Square to Cricle</p>
+    </div>
+    <div class="border item">
+        <p>Insert Border</p>
+    </div>
+</body>
+</html>

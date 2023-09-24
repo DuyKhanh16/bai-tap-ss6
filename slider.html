@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            text-align: center;
+            margin: 100px;
+            border-radius: 10px;
+        }
+
+        .container__slider1 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: green;
+            display: none;
+            top: 0;
+            text-align: center;
+            /* padding-top: 170px; */
+        }
+
+        .container__slider2 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: blue;
+            display: none;
+            top: 0;
+            text-align: center;
+            /* padding-top: 170px; */
+
+        }
+
+        .container__slider3 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: yellow;
+            display: none;
+            top: 0;
+            text-align: center;
+            /* padding-top: 170px; */
+        }
+
+        .container__slider4 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: rgb(107, 137, 198);
+            display: none;
+            top: 0;
+            text-align: center;
+            /* padding-top: 170px; */
+        }
+        .container__click1{
+        margin-left: 120px;
+      }
+        .container__click1,
+        .container__click2,
+        .container__click3,
+        .container__click4 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+            top: 300px;
+            margin: 5px;
+            opacity: 0.6;
+        }
+        p{
+            position: relative;
+            font-size: 30px;
+            top: 170px;
+        }
+        .container__click1:active~.container__slider1 {
+            display: block;
+            transform: scale(0.95);
+            border-radius: 10px;
+        }
+
+        .container__click2:active~.container__slider2 {
+            display: block;
+            transform: scale(0.95);
+            border-radius: 10px;
+        }
+
+        .container__click3:active~.container__slider3 {
+            display: block;
+            transform: scale(0.95);
+            border-radius: 10px;
+        }
+
+        .container__click4:active~.container__slider4 {
+            display: block;
+            transform: scale(0.95);
+            border-radius: 10px;
+        }
+
+    
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <p>Trình phát Slider</p>
+        <div class="container__click1"></div>
+        <div class="container__click2"></div>
+        <div class="container__click3"></div>
+        <div class="container__click4"></div>
+        <div class="container__slider1">
+         <p>Slider 1</p>
+        </div>
+        <div class="container__slider2">
+            <p>Slider 2</p>
+        </div>
+        <div class="container__slider3">
+            <p>Slider 3</p>
+        </div>
+        <div class="container__slider4">
+            <p>Slider 4</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            background-color: blanchedalmond;
+        }
+
+        .head {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(181, 181, 181);
+           margin-left: 10px;
+        }
+
+        .left {
+            background-color: blue;
+            width: 10px;
+            height: 150px;
+        }
+
+        .right {
+            width: 100px;
+            height: 150px;
+            background-color: blue;
+            display: none;
+
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            color: white;
+        }
+        .head:active ~ .box .right{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="head"><img  width="30" height="30" src="./media/Menu_icon_icon-icons.com_71858.png" alt=""></div>
+    
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li><p>Home</p></li>
+                <li><p>Abot</p></li>
+                <li><p>Contact</p></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+
+</html>

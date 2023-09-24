@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .lock {
+            width: 300px;
+            height: 300px;
+            border: 10px solid saddlebrown;
+            box-shadow: 10px;
+            border-radius: 50%;
+            position: relative;
+            transform: translate(100px, 100px);
+            background-image: url(./7-0a282.jpg.webp);
+
+        }
+
+        .kimgio {
+            animation: vongquay 3600s infinite 3s;
+            top: 50%;
+            left: 33%;
+            width: 100px;
+            height: 5px;
+            background-color: black;
+            position: absolute;
+            /* transform: rotate(90deg) */
+            animation-timing-function: linear
+        }
+
+        .kimphut {
+            left: 20%;
+            /* transform: rotate(90deg); */
+            top: 50%;
+            width: 180px;
+            height: 5px;
+            background: rgb(252, 250, 250);
+            position: absolute;
+            animation: vongquay 60s infinite 3s ;
+            animation-timing-function: linear;
+        }
+
+        .giua {
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .text {
+            font-size: 2em;
+            font-weight: 200;
+            color: rgb(244, 7, 7);
+        }
+
+        .top {
+            position: absolute;
+            left: 45%;
+
+        }
+
+        .bot {
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+
+        .left {
+            position: absolute;
+            left: 0;
+            top: 45%;
+        }
+
+        .right {
+            position: absolute;
+            right: 0;
+            top: 45%;
+        }
+
+        @keyframes vongquay {
+            to {
+                transform: rotate(360deg);
+            }
+
+            from {
+                transform: rotate(0deg);
+            }
+            
+        }
+        .hiden{
+            width: 30px;
+            height: 5px;
+            display: block;
+             background-color: red;
+             position: absolute;
+             opacity: 0.5;
+             
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lock">
+
+        <div class="kimgio">
+            <span class="hiden"></span>
+        </div>
+        <div class="kimphut">
+            <span class="hiden"></span>
+        </div>
+        <div class="giua"></div>
+        <div class="top text">12</div>
+        <div class="right text">3</div>
+        <div class="bot text">6</div>
+        <div class="left text">9</div>
+    </div>
+</body>
+
+</html>
